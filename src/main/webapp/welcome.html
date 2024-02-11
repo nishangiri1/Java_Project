@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Records</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input[type="text"], input[type="number"], input[type="submit"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="container">
+<h1>Insert Records</h1>
+<form action="inserted" method="post">
+
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Rollnumber</th>
+            <th>Faculty</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="text" name="name" required></td>
+            <td><input type="number" name="roll" required></td>
+            <td><input type="text" name="faculty" required></td>
+        </tr>
+
+        </tbody>
+    </table>
+    <input type="submit" value="Insert">
+</form>
+<a href="update.html">Update Table</a>
+<br>
+<a href="delete.html">Delete record</a>
+<br>
+<form action="show" method="post"> <input type="submit" value="Display Records"></form>
+</body>
+</html>
